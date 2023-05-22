@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,46 +9,32 @@
         android:layout_height="fill_parent"
         android:orientation="vertical">
 
+
+
         <EditText
-            android:id="@+id/txtNome"
+            android:id="@+id/txtNomeProduto"
             android:layout_width="match_parent"
             android:layout_height="71dp"
             android:ems="10"
-            android:hint="Nome"
+            android:hint="Produto"
             android:layout_margin="10dp"
             android:inputType="text" />
 
-        <EditText
-            android:id="@+id/txtEmail"
+        <CheckBox
+            android:id="@+id/ckbContem"
             android:layout_width="match_parent"
-            android:layout_height="71dp"
-            android:ems="10"
-            android:hint="Email"
-            android:layout_margin="10dp"
-            android:inputType="text" />
-
-
-
-
-        <EditText
-            android:id="@+id/txtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="71dp"
-            android:ems="10"
-            android:hint="Senha"
-            android:layout_margin="10dp"
-            android:inputType="textPassword" />
-
+            android:layout_height="wrap_content"
+            android:text="Contém Produto" />
 
         <Button
-            android:id="@+id/btnCriar"
+            android:id="@+id/btnCadastroProduto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Criar Conta"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:text="Cadastrar Produto"
             android:textColor="#FFFFFF" />
 
+
     </LinearLayout>
+
 </ScrollView>

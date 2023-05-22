@@ -23,26 +23,11 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-
-        <ImageView
-            android:id="@+id/imgViewIndisponivel"
+        <ListView
+            android:id="@+id/lsvProdutosIndisponiveis"
             android:layout_width="match_parent"
-            android:layout_height="361dp"
-            android:layout_marginTop="60dp"
-            app:srcCompat="@drawable/cafe" />
+            android:layout_height="match_parent" />
 
-        <ImageView
-            android:id="@+id/imgViewIndisponivel2"
-            android:layout_width="match_parent"
-            android:layout_height="361dp"
-            android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/acucar" />
 
-        <ImageView
-            android:id="@+id/imgViewIndisponivel3"
-            android:layout_width="match_parent"
-            android:layout_height="361dp"
-            android:layout_marginTop="50dp"
-            app:srcCompat="@drawable/leite" />
     </LinearLayout>
 </ScrollView>

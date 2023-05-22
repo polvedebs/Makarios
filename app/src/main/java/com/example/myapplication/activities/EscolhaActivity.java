@@ -14,6 +14,7 @@ public class EscolhaActivity extends AppCompatActivity {
 
     CardView produtosDisponiveiesCardView;
     CardView produtosIndisponiveisCardView;
+    CardView produtosCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +23,11 @@ public class EscolhaActivity extends AppCompatActivity {
 
         produtosDisponiveiesCardView = findViewById(R.id.cardProdutosDisponiveis);
         produtosIndisponiveisCardView = findViewById(R.id.cardProdutosIndisponiveis);
+        produtosCadastrar = findViewById(R.id.cardCadastroProduto);
 
         chamarTelaProdutosIndisponiveis();
         chamarTelaProdutosDisponiveis();
+        chamarTelaCadastroProdutos();
     }
 
     private void chamarTelaProdutosIndisponiveis() {
@@ -44,6 +47,17 @@ public class EscolhaActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent myIntent = new Intent(EscolhaActivity.this, ProdutosDisponiveisActivy.class);
+                EscolhaActivity.this.startActivity(myIntent);
+            }
+        });
+    }
+
+    private void chamarTelaCadastroProdutos() {
+        produtosCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent myIntent = new Intent(EscolhaActivity.this, CadastroProduto.class);
                 EscolhaActivity.this.startActivity(myIntent);
             }
         });
