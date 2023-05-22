@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtProdutosIndisponiveis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Produtos Indisponíveis"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imgViewIndisponivel"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/cafe" />
+
+        <ImageView
+            android:id="@+id/imgViewIndisponivel2"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/acucar" />
+
+        <ImageView
+            android:id="@+id/imgViewIndisponivel3"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/leite" />
+    </LinearLayout>
+</ScrollView>
